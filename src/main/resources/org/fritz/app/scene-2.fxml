@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="682.0" prefWidth="1128.0" style="-fx-background-color: #1A2A37;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fritz.app.OverviewController">
+   <children>
+      <ImageView fx:id="imageBackdrop" fitHeight="648.0" fitWidth="1150.0" layoutX="-15.0" layoutY="-104.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../resources/8uVKfOJUhmybNsVh089EqLHUYEG.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="296.0" prefHeight="387.0" prefWidth="1136.0" style="-fx-background-color: #1A2A37;">
+         <children>
+            <Label fx:id="titleLabel" layoutX="293.0" prefHeight="52.0" prefWidth="836.0" stylesheets="@scenes.css" text="Dune" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label fx:id="overviewLabel" alignment="TOP_LEFT" layoutX="293.0" layoutY="75.0" prefHeight="171.0" prefWidth="733.0" stylesheets="@scenes.css" text="Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet’s exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity’s greatest potential-only those who can conquer their fear will survive" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Poppins Regular" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="330.0" mnemonicParsing="false" onAction="#backButton" prefHeight="37.0" prefWidth="99.0" stylesheets="@scenes.css" text="Back" />
+            <HBox layoutX="293.0" layoutY="45.0" prefHeight="37.0" prefWidth="420.0">
+               <children>
+                  <Label fx:id="yearLabel" stylesheets="@scenes.css" text="2021" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="37.0" prefWidth="7.0" />
+                  <Label fx:id="directedByLabel" stylesheets="@scenes.css" text="Directed by" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="37.0" prefWidth="7.0" />
+                  <Label fx:id="directorLabel" prefHeight="23.0" prefWidth="264.0" stylesheets="@scenes.css" text="Denis Villenueve" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Regular" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imagePoster" fitHeight="304.0" fitWidth="253.0" layoutX="82.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../resources/61CRq2R6i4L._AC_UF894,1000_QL80_.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

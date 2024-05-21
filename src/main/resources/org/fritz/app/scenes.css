@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Poppins';
+    /*src: url(utils/Poppins_Regular.ttf);*/
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    /*src: url(utils/Poppins_Bold.ttf);*/
+}
+#headerLabel {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-family: 'Poppins-Bold';
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #71929e;
+}
+
+.text-field {
+    -fx-text-fill: black;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#titleLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins-Bold';
+    -fx-font-size: 33px;
+    -fx-font-weight: bold;
+}
+
+#yearLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#directedByLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#directorLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+
+#overviewLabel {
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#backButton {
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#backButton:hover {
+    -fx-background-color: #71929e;
+}
+
+#searchIcon {
+    -fx-graphic: url('utils/search-icon.svg');
+}
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="1128.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fritz.app.Controller">
+   <children>
+      <AnchorPane prefHeight="682.0" prefWidth="316.0" style="-fx-background-color: #405e71;">
+         <children>
+            <Button fx:id="searchButton" layoutX="208.0" layoutY="107.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="30.0" prefWidth="72.0" stylesheets="@scenes.css" text="Search" />
+            <TextField fx:id="searchMovieField" layoutX="37.0" layoutY="107.0" prefHeight="30.0" prefWidth="155.0" stylesheets="@scenes.css" />
+            <VBox layoutX="37.0" layoutY="165.0" prefHeight="445.0" prefWidth="106.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#trendingButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Trending" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#comedyButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Comedy" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#romanceButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Romance" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#animationButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Animation" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#familyButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Family" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#historyButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="History" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#musicButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Music" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#thrillerButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Thriller" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#warButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="War" />
+               </children>
+            </VBox>
+            <VBox layoutX="174.0" layoutY="165.0" prefHeight="484.0" prefWidth="106.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#actionButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Action" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#adventureButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Adventure" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#dramaButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Drama" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#crimeButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Crime" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#fantasyButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Fantasy" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#horrorButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Horror" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#mysteryButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Mystery" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#scifiButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Sci/Fi" />
+                  <Pane prefHeight="19.0" prefWidth="106.0" />
+                  <Button mnemonicParsing="false" onAction="#westernButton" prefHeight="25.0" prefWidth="106.0" stylesheets="@scenes.css" text="Western" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane layoutX="315.0" prefHeight="682.0" prefWidth="813.0" style="-fx-background-color: #1A2A37;">
+         <children>
+            <VBox prefHeight="665.0" prefWidth="813.0">
+               <children>
+                  <Pane prefHeight="25.0" prefWidth="98.0" />
+                  <Label fx:id="headerLabel" alignment="CENTER" prefHeight="45.0" prefWidth="818.0" stylesheets="@scenes.css" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="Poppins Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="25.0" prefWidth="98.0" />
+                  <HBox prefHeight="85.0" prefWidth="784.0">
+                     <children>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster1" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster2" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster3" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster4" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="25.0" prefWidth="98.0" />
+                  <HBox prefHeight="85.0" prefWidth="784.0">
+                     <children>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster5" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster6" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster7" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                        <ImageView fx:id="imagePoster8" cache="true" fitHeight="262.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../resources/No-Image-Placeholder.svg.png" />
+                           </image></ImageView>
+                        <Pane prefHeight="262.0" prefWidth="23.0" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="22.0" prefWidth="813.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
